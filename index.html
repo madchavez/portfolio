@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miguel Antonio D. Chavez | Home</title>
+    <meta name="description" content="Portfolio" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body id="top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-body sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top" data-scroll>
+          Miguel Antonio D. Chavez
+        </a>
+
+        <button class="navbar-toggler ms-auto" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <div class="d-flex align-items-md-center gap-2 ms-auto flex-column flex-md-row mt-3 mt-md-0">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#top" data-scroll>Home</a>
+              <a class="nav-link" href="resume.html">Resume</a>
+              <a class="nav-link" href="#portfolio" data-scroll>Portfolio</a>
+            </div>
+
+            <button
+              class="btn btn-sm btn-outline-secondary ms-md-2"
+              type="button"
+              id="themeToggle"
+              aria-label="Toggle theme">
+              <span class="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-4 py-md-5">
+      <div class="container py-2 py-md-4">
+        <div class="row align-items-center g-4">
+
+          <!-- Left Card -->
+          <div class="col-12 col-lg-4 order-2 order-lg-1">
+            <div class="card shadow-sm">
+
+              <div class="card-img-top p-3 text-center">
+                <img src="assets/img/profpic.jpg"
+                    alt="Profile Photo"
+                    class="img-fluid rounded-circle border"
+                    style="max-width: 220px; border-width: 4px;">
+              </div>
+
+              <div class="card-body">
+                <h2 class="h5 mb-3">Quick Links</h2>
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item list-group-item-action"
+                     href="mailto:migueladchavez@gmail.com">
+                    Email
+                    <span class="text-body-secondary float-end">
+                      migueladchavez@gmail.com
+                    </span>
+                  </a>
+
+                  <a class="list-group-item list-group-item-action"
+                     href="https://github.com/madchavez"
+                     target="_blank"
+                     rel="noopener">
+                    GitHub
+                    <span class="text-body-secondary float-end">
+                      @madchavez
+                    </span>
+                  </a>
+
+                  <a class="list-group-item list-group-item-action"
+                     href="https://www.linkedin.com/in/madchavez"
+                     target="_blank"
+                     rel="noopener">
+                    LinkedIn
+                    <span class="text-body-secondary float-end">
+                      /in/madchavez
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Text -->
+          <div class="col-12 col-lg-8 order-1 order-lg-2 text-center text-lg-start">
+
+            <p class="text-uppercase small text-secondary mb-2">
+              Web Development • ETL • ML/AI
+            </p>
+
+            <h1 class="display-6 display-md-5 fw-bold mb-3">
+              Full-stack developer focused on Data Science, MLOps, and Data Engineering;
+              College Instructor translating theory into real-world impact.
+            </h1>
+
+            <p class="lead text-body-secondary mb-4">
+              I create end-to-end data solutions for organizations at any stage of their digital journey.
+            </p>
+
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-lg-start">
+              <a class="btn btn-primary btn-lg" href="#portfolio" data-scroll>
+                View Portfolio
+              </a>
+              <a class="btn btn-outline-primary btn-lg" href="resume.html">
+                View Resume
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Portfolio -->
+    <main class="py-4 py-md-5 border-top" id="portfolio">
+      <div class="container">
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-2 mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">Portfolio</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <a href="https://github.com/madchavez/Markowitz_Optimization">
+                <img src="assets/img/card1.png"
+                   class="card-img-top"
+                   alt="Project 1 preview"
+                   loading="lazy" />
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h3 card-title">
+                  <a href="https://github.com/madchavez/Markowitz_Optimization" target="_blank" rel="noopener" class="text-reset text-decoration-none">
+                    Shrinkage Methods on Mean-Variance Portfolios
+                  </a>
+                </h3>
+                <hr class="my-2">
+                <p class="card-text text-body-secondary flex-grow-1" href="https://github.com/madchavez/Markowitz_Optimization">
+                   Built on the Markowitz mean-variance framework, the project analyzes how different covariance estimation techniques impact portfolio risk and performance using historical S&P 500 data. Applied Principal Component Analysis (PCA) and Random Matrix Theory (RMT) to reduce noise, improve stability, and generate more robust portfolio allocations. Developed the full workflow end-to-end, including data ingestion, preprocessing, optimization, and visualization.
+                </p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-sm btn-primary" href="https://github.com/madchavez/Markowitz_Optimization" target="_blank">Code</a>
+                  <!-- <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank">Code</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <a href="https://github.com/madchavez/Markowitz_Optimization">
+                <img src="assets/img/card2.png"
+                   class="card-img-top"
+                   alt="Project 1 preview"
+                   loading="lazy" />
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h3 card-title">
+                  <a href="https://github.com/madchavez/Markowitz_Optimization" target="_blank" rel="noopener" class="text-reset text-decoration-none">
+                     Store-Level Demand Forecasting
+                  </a>
+                </h3>
+                <hr class="my-2">
+                <p class="card-text text-body-secondary flex-grow-1" href="https://github.com/madchavez/Markowitz_Optimization">
+                  Developed a production-style retail forecasting system using multi-year historical data across 1,100+ stores. Designed the full pipeline from data ingestion to model deployment, with a focus on scalability, reproducibility, and business impact. Comparative analysis shows that SARIMAX performs best in outlets with regular weekly patterns and stable operations, whereas XGBoost is more robust in the presence of nonlinear interactions and cross-store heterogeneity.
+                </p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-sm btn-primary" href="https://github.com/madchavez/Markowitz_Optimization" target="_blank">Code</a>
+                  <!-- <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank">Code</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <a href="https://github.com/madchavez/Markowitz_Optimization">
+                <img src="assets/img/card3.png"
+                   class="card-img-top"
+                   alt="Project 1 preview"
+                   loading="lazy" />
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h3 card-title">
+                  <a href="https://github.com/madchavez/Markowitz_Optimization" target="_blank" rel="noopener" class="text-reset text-decoration-none">
+                    YOLOv8 Crack-Detection and Measurement
+                  </a>
+                </h3>
+                <hr class="my-2">
+                <p class="card-text text-body-secondary flex-grow-1" href="https://huggingface.co/spaces/debug-divas/crack-mapping">
+                   Built an interactive crack segmentation application hosted on Hugging Face Spaces that maps structural cracks from input images using deep-learning-based computer vision. Implemented the full pipeline from model inference to visual output, optimized for interactive deployment and real-time usability. The system uses image segmentation techniques to detect and delineate crack features across diverse surface conditions, allowing rapid evaluation of structural damage from visual data.
+                </p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-sm btn-primary" href="https://huggingface.co/spaces/debug-divas/crack-mapping" target="_blank">Live</a>
+                  <a class="btn btn-sm btn-outline-secondary" href="https://huggingface.co/spaces/debug-divas/crack-mapping/tree/main" target="_blank">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 text-center text-md-start">
+        <small class="text-body-secondary">
+          © <span id="year"></span> Miguel Antonio D. Chavez
+        </small>
+        <small>
+          <a class="link-secondary" href="#top" data-scroll>
+            Back to top
+          </a>
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
