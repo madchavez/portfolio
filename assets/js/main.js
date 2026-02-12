@@ -1,8 +1,3 @@
-// =======================
-// FILE: assets/js/main.js
-// Smooth scroll + theme toggle (Bootstrap 5.3 data-bs-theme)
-// =======================
-
 (function () {
   var root = document.documentElement;
   var toggle = document.getElementById("themeToggle");

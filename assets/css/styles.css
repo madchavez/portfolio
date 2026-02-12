@@ -1,15 +1,8 @@
-/* =======================
-FILE: assets/css/styles.css
-Normal light/dark theming via Bootstrap data-bs-theme.
-Only small layout tweaks + print rules.
-======================= */
-
 .card-img-top {
   object-fit: cover;
   aspect-ratio: 16 / 9;
 }
 
-/* Optional: make hero look a bit more "normal" without heavy gradients */
 header {
   background: linear-gradient(
     to bottom,
